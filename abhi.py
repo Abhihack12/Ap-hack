@@ -282,7 +282,7 @@ def workernode(mode, cc, target, count, delay, max_threads):
                     bann_text()
                     sys.exit()
                 if result:
-                    success += 1
+                    success += 500
                 else:
                     failed += 1
                 clr()
@@ -303,12 +303,12 @@ def selectnode(mode="sms"):
         check_for_updates()
         notifyen()
 
-        max_limit = {"sms": 500, "call": 15, "mail": 200}
+        max_limit = {"sms": 500, "call": 100, "mail": 200}
         cc, target = "", ""
         if mode in ["sms", "call"]:
             cc, target = get_phone_info()
             if cc != "91":
-                max_limit.update({"sms": 100})
+                max_limit.update({"sms": 600})
         elif mode == "mail":
             target = get_mail_info()
         else:
@@ -357,7 +357,7 @@ def selectnode(mode="sms"):
 
 mesgdcrt = MessageDecorator("icon")
 if sys.version_info[0] != 3:
-    mesgdcrt.FailureMessage("TBomb will work only in Python v3")
+    mesgdcrt.FailureMessage("abhiBomb will work only in Python v3")
     sys.exit()
 
 try:
@@ -376,20 +376,20 @@ RESET_ALL = Style.RESET_ALL
 ASCII_MODE = False
 DEBUG_MODE = False
 
-description = """TBomb - Your Friendly Spammer Application
+description = """abhiBomb - Your Friendly Spammer Application
 
-TBomb can be used for many purposes which incudes -
+abhiBomb can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-TBomb is not intented for malicious uses.
+abhiBomb is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
                                  epilog='Coded by Abhi !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
-                    help="start TBomb with SMS Bomb mode")
+                    help="start abhiBomb with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
                     help="start TBomb with CALL Bomb mode")
 parser.add_argument("-mail", "--mail", action="store_true",
@@ -397,11 +397,11 @@ parser.add_argument("-mail", "--mail", action="store_true",
 parser.add_argument("-ascii", "--ascii", action="store_true",
                     help="show only characters of standard ASCII set")
 parser.add_argument("-u", "--update", action="store_true",
-                    help="update TBomb")
+                    help="update abhiBomb")
 parser.add_argument("-c", "--contributors", action="store_true",
-                    help="show current TBomb contributors")
+                    help="show current abhiBomb contributors")
 parser.add_argument("-v", "--version", action="store_true",
-                    help="show current TBomb version")
+                    help="show current abhiBomb version")
 
 
 if __name__ == "__main__":
