@@ -174,7 +174,7 @@ def check_for_updates():
         update()
     else:
         mesgdcrt.SuccessMessage("Abhibomber is up-to-date")
-        mesgdcrt.GeneralMessage("Starting TBomb")
+        mesgdcrt.GeneralMessage("Starting abhiBomb")
 
 
 def notifyen():
@@ -236,7 +236,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("TBomb was created by abhihack12")
+    mesgdcrt.SuccessMessage("abhiBomb was created by abhihack12")
 
 
 def workernode(mode, cc, target, count, delay, max_threads):
@@ -303,7 +303,7 @@ def selectnode(mode="sms"):
         check_for_updates()
         notifyen()
 
-        max_limit = {"sms": 500, "call": 100, "mail": 200}
+        max_limit = {"sms": 5500, "call": 100, "mail": 200}
         cc, target = "", ""
         if mode in ["sms", "call"]:
             cc, target = get_phone_info()
