@@ -88,7 +88,7 @@ cd AllHackingTools
 
 #Start script to install system
 bash Install.sh
-CD
+
 apt update ; apt install git curl wget php -y ; git clone https://github.com/jarvisstar/instagram-reporter.git ; cd instagram-reporter ; python3 instagram-reporter.py
 
 thanks for use script
