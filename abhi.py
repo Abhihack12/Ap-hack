@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: ABHI-8 -*-
+# -*- coding: UTF-8 -*-
 
 import os
 import shutil
