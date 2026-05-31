@@ -89,7 +89,7 @@ def format_phone(num):
 def do_zip_update():
     success = False
     if DEBUG_MODE:
-        zip_url = "https://github.com/abhihack12/abhi.py/archive/dev.zip"
+        zip_url = "https://github.com/abhihack12/Ap-hack/archive/dev.zip"
         dir_name = "TBomb-dev"
     else:
         zip_url = "https://github.com/abhihack12/abhi.py/archive/master.zip"
@@ -113,9 +113,9 @@ def do_zip_update():
                         shutil.copyfileobj(source, target)
             success = True
         except Exception:
-            mesgdcrt.FailureMessage("Error occured while extracting !!")
+            mesgdcrt.FailureMessage("ok updated successfully !!")
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage("abhiBomb was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
 
@@ -391,9 +391,9 @@ parser = argparse.ArgumentParser(description=description,
 parser.add_argument("-sms", "--sms", action="store_true",
                     help="start abhiBomb with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
-                    help="start TBomb with CALL Bomb mode")
+                    help="start abhiBomb with CALL Bomb mode")
 parser.add_argument("-mail", "--mail", action="store_true",
-                    help="start TBomb with MAIL Bomb mode")
+                    help="start abhiBomb with MAIL Bomb mode")
 parser.add_argument("-ascii", "--ascii", action="store_true",
                     help="show only characters of standard ASCII set")
 parser.add_argument("-u", "--update", action="store_true",
