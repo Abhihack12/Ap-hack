@@ -10,7 +10,7 @@ It's contain tools like
 ‌DarkFly
 ‌etc
 For use commands is 
-Git clone https://GitHub.com/abhihack12/Ap-hack.git
+  git clone https://GitHub.com/abhihack12/Ap-hack.git
 So second commands is
 Bash master.sh
 So second is new.py this script work on master control on termux for use commands is
